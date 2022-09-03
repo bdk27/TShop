@@ -50,14 +50,58 @@ a{
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
+/* hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/banner/pexels-cottonbro-3927390.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h3{
+    font-size: 5rem;
+    color: #222;
+    background-image: url(images/button.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #222;
+}
+.text h2{
+    font-size: 10rem;
+}
+.text p{
+    font-size: 3rem;
+    color: #6c6c6c;
+}
+.text p span{
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+}
+.text button{
+    font-size: 1.8rem;
+    border: none;
+    color: #fff;
+    background: #e56717;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.text button i{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+.text button:hover{
+    font-size: 2rem;
+}
 
 
