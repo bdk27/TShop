@@ -123,7 +123,7 @@ a{
 .card-container{
     margin: 4rem 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -202,7 +202,7 @@ a{
 .shoes .card-container .card{
     width: 23%;
     padding: 1rem 1.2rem;
-    border: 1px solid #DAB1D5;
+    border: 1px solid #FFDAC8;
     border-radius: 2.5rem;
     position: relative;
     margin: 1.5rem 0;
@@ -218,6 +218,21 @@ a{
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(images/banner/pexels-antony-trivet-9982620.jpg);
 }
 
+/* accessories */
+.accessories h2{
+    font-size: 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+.accessories .line{
+    border: 2px solid#4F9D9D;
+}
+.accessories .card-container .card{
+    border: 1px solid #B3D9D9;
+}
+.accessories .card-container .card .detail h3{
+    color:#4F9D9D;
+}
 
 /* media query */
 @media (max-width: 991px){
@@ -289,7 +304,8 @@ a{
         display: block;
     }
     .card-container .card, 
-    .shoes .card-container .card{
+    .shoes .card-container .card,
+    .accessories .card-container .card{
         width: 48%;
     }
  
@@ -308,7 +324,8 @@ a{
         font-size: 1.4rem;
     }
     .card-container .card, 
-    .shoes .card-container .card{
+    .shoes .card-container .card,
+    .accessories .card-container .card{
         width: 100%;
     }
     
