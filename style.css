@@ -213,6 +213,11 @@ a{
     color:#BB3D00;
 }
 
+/* banner */
+.acc-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(images/banner/pexels-antony-trivet-9982620.jpg);
+}
+
 
 /* media query */
 @media (max-width: 991px){
