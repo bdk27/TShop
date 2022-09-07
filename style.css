@@ -110,15 +110,24 @@ a{
     font-size: 3rem;
     margin-top: 4rem;
     text-align: center;
+    position: relative;
 }
-.clothes .card-container{
+.line{
+    border: 2px solid #005AB5;
+    position: absolute;
+    width: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 1rem;
+}
+.card-container{
     margin: 4rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.clothes .card-container .card{
+.card-container .card{
     width: 23%;
     padding: 1rem 1.2rem;
     border: 1px solid#C4E1FF;
@@ -126,30 +135,30 @@ a{
     position: relative;
     margin: 1.5rem 0;
 }
-.clothes .card-container .card img{
+.card-container .card img{
     width: 100%;
     border-radius: 2.5rem;
 }
-.clothes .card-container .card .detail{
+.card-container .card .detail{
     margin-top: 1rem;
     line-height: 2.5rem;
 }
-.clothes .card-container .card .detail span{
+.card-container .card .detail span{
     font-size: 1.4rem;
     color: #6c6c6c;
 }
-.clothes .card-container .card .detail h5{
+.card-container .card .detail h5{
     font-size: 1.8rem;
 }
-.clothes .card-container .card .detail .star{
+.card-container .card .detail .star{
     color: rgb(243, 181, 25);
 }
-.clothes .card-container .card .detail h3{
+.card-container .card .detail h3{
     font-size: 2rem;
     margin-bottom: 2rem;
     color:#005AB5;
 }
-.clothes .card-container .card a i{
+.card-container .card a i{
     font-size: 2.5rem;
     color: #6c6c6c;
     position: absolute;
@@ -181,6 +190,28 @@ a{
     font-size: 2.5rem;
 }
 
+/* shoes */
+.shoes h2{
+    font-size: 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+.shoes .line{
+    border: 2px solid #BB3D00;
+}
+.shoes .card-container .card{
+    width: 23%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #DAB1D5;
+    border-radius: 2.5rem;
+    position: relative;
+    margin: 1.5rem 0;
+}
+.shoes .card-container .card .detail h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#BB3D00;
+}
 
 
 /* media query */
@@ -203,16 +234,16 @@ a{
     .hero .text button i{
         font-size: 1.6rem;
     }
-    .clothes .card-container .card .detail span{
+    .card-container .card .detail span{
         font-size: 1rem;
     }
-    .clothes .card-container .card .detail h5{
+    .card-container .card .detail h5{
         font-size: 1.5rem;
     }
-    .clothes .card-container .card .detail h3{
+    .card-container .card .detail h3{
         font-size: 1.5rem;
     }
-    .clothes .card-container .card a i{
+    .card-container .card a i{
         font-size: 2rem;
     }
 }
@@ -252,7 +283,8 @@ a{
     .nav i{
         display: block;
     }
-    .clothes .card-container .card{
+    .card-container .card, 
+    .shoes .card-container .card{
         width: 48%;
     }
  
@@ -270,7 +302,8 @@ a{
     .hero .text p span{
         font-size: 1.4rem;
     }
-    .clothes .card-container .card{
+    .card-container .card, 
+    .shoes .card-container .card{
         width: 100%;
     }
     
