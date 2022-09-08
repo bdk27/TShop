@@ -165,6 +165,9 @@ a{
     right: 2rem;
     bottom: 2rem;
 }
+.card-container .card a i:hover{
+    color: #005AB5;
+}
 
 /* banner */
 .banner{
@@ -212,6 +215,9 @@ a{
     margin-bottom: 2rem;
     color:#BB3D00;
 }
+.shoes .card-container .card a i:hover{
+    color:#BB3D00;
+}
 
 /* banner */
 .acc-banner{
@@ -232,6 +238,96 @@ a{
 }
 .accessories .card-container .card .detail h3{
     color:#4F9D9D;
+}
+.accessories .card-container .card a i:hover{
+    color:#4F9D9D;
+}
+
+/* sm-banner */
+.sm-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner-left{
+    width: 48%;
+}
+.banner-right{
+    width: 48%;
+}
+.banner-box{
+    background-image: url(images/banner/pexels-ivan-samkov-8498381.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+.banner-box .text{
+   padding: 3rem;
+   color: #fff;
+}
+.banner-box .text span{
+    font-size: 1.6rem;
+}
+.banner-box .text h2{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+}
+.banner-box .text p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.banner-box .text button{
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1rem 2.5rem;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.banner-box2{
+    background-image: url(images/banner/pexels-andrea-piacquadio-3767414.jpg);
+    width: 100%;
+    margin-top: 1rem;
+}
+.banner-box3{
+    background-image: url(images/banner/pexels-ron-lach-9256867.jpg);
+    width: 100%;
+}
+.banner-box3 .text h2{
+    color: #fff;
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+}
+.banner-box4{
+    background-image: url(images/banner/pexels-pavel-danilyuk-6461394.jpg);
+    width: 100%;
+    height: 61vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    padding: 3rem;
+}
+.banner-box4 h2{
+    font-size: 4rem;
+}
+.banner-box4 span{
+    font-size: 2rem;
+    color: #ec544e;
+    font-weight: bold;
 }
 
 /* media query */
@@ -265,6 +361,15 @@ a{
     }
     .card-container .card a i{
         font-size: 2rem;
+    }
+    .banner-left{
+        width: 100%;
+    }
+    .banner-right{
+        width: 100%;
+    }
+    .banner-box2{
+        margin-bottom: 1rem;
     }
 }
 @media (max-width: 768px){
@@ -308,6 +413,9 @@ a{
     .accessories .card-container .card{
         width: 48%;
     }
+    .banner-box4 h2{
+        font-size: 3rem;
+    }
  
 }
 @media (max-width: 450px){
@@ -327,6 +435,26 @@ a{
     .shoes .card-container .card,
     .accessories .card-container .card{
         width: 100%;
+    }
+    .banner-box .text span{
+        font-size: 1.4rem;
+    }
+    .banner-box .text h2{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+    .banner-box .text p{
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    .banner-box .text button{
+        font-size: 1.2rem;
+    }
+    .banner-box4 h2{
+        font-size: 2rem;
+    }
+    .banner-box4 span{
+        font-size: 1.8rem;
     }
     
 }
