@@ -23,7 +23,8 @@ a{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    position: relative;
+    background: #fff;
+    width: 100%;
     z-index: 1000;
 }
 .nav h1{
