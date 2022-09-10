@@ -384,6 +384,30 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 
+/* arrow */
+.arrow-btn{
+   position: fixed;
+   right: 2.5rem;
+   bottom: 2.5rem;
+    
+}
+.arrow-btn .circle{
+    width: 5rem;
+    height: 5rem;
+    background: #e56717;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    z-index: 999999;
+}
+.arrow-btn i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
 
 /* media query */
 @media (max-width: 991px){
