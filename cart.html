@@ -7,209 +7,213 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="nav" id="nav">
-        <div class="logo">
-           <h1>TShop</h1> 
-        </div>
-
-        <ul id="navbar">
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="#clothes">服飾</a></li>
-            <li><a href="#shoes">鞋款</a></li>
-            <li><a href="#accessories">配件</a></li>
-            <li><a href="#footer">資訊中心</a></li>
-            <li><a href="#">結帳</a></li>
-        </ul>
-
-        <i class="fa-solid fa-bars" id="menu"></i>
-    </section>
-
-    <section class="cart" id="cart">
-        <h4>購物車(1件)</h4>
-        <table>
-            <thead>
-                <tr>
-                    <td>商品圖</td>
-                    <td>商品資訊</td>
-                    <td>價格</td>
-                    <td>數量</td>
-                    <td>刪除</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="cursor: pointer;"><img src="images/shirt/f1.jpg"></td>
-                    <td style="cursor: pointer;">夏日涼感襯衫-拼接</td>
-                    <td>500</td>
-                    <td><input type="number" value="1"></td>
-                    <td><i class="fa-solid fa-trash-can"></i></td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td style="cursor: pointer;"><img src="images/shirt/f1.jpg"></td>
-                    <td style="cursor: pointer;">夏日涼感襯衫-拼接</td>
-                    <td>500</td>
-                    <td><input type="number" value="1"></td>
-                    <td><i class="fa-solid fa-trash-can"></i></td>
-                </tr>
-            </tbody>
-        </table>
-        
-    </section>
-
-    <section class="order" id="order">
-        <div class="form">
-            <div class="form-left">
-                <h3>選擇送貨與付款</h3>
-
-                <div class="delivery">
-                    <div class="form-group">
-                        <label for="#">送貨地點</label>
-                        <div>
-                            <select name="#" id="#">
-                                <option value="#">台灣</option>
-                            </select>
-                        </div>
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="#">送貨方式</label>
-                        <div>
-                            <select name="#" id="#">
-                                <option value="#">7-11 取貨(信用卡,LINEPay)</option>
-                                <option value="#">7-11 取貨(貨到付款)</option>
-                                <option value="#">黑貓宅配(信用卡,LINEPay)</option>
-                                <option value="#">黑貓宅配(信用卡,LINEPay)</option>
-                                <option value="#">黑貓宅配(特別地區)</option>
-                            </select>
-                        </div>
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="#">付款方式</label>
-                        <div>
-                        <select name="#" id="#">
-                                <option value="#">LINEPay</option>
-                                <option value="#">信用卡(Visa,Master,JCB)</option>
-                            </select> 
-                        </div>
-                    </div>    
-                </div>
+    <div id="app">
+        <section class="nav" id="nav">
+            <div class="logo">
+            <h1>TShop</h1> 
             </div>
 
-            <div class="form-right">
-                <h3>訂單資訊</h3>
+            <ul id="navbar">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="#clothes">服飾</a></li>
+                <li><a href="#shoes">鞋款</a></li>
+                <li><a href="#accessories">配件</a></li>
+                <li><a href="#footer">資訊中心</a></li>
+                <li><a href="#">結帳</a></li>
+            </ul>
 
-                <div class="total">
-                    <div class="fee-group">
-                        <p>小計:</p>
-                        <p>500</p>
-                    </div>
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </section>
 
-                    <div class="fee-group">
-                        <p>運費:</p>
-                        <p>60</p>
-                    </div>
+        <section class="cart" id="cart">
+            <h4>購物車(1件)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <td>商品圖</td>
+                        <td>商品資訊</td>
+                        <td>價格</td>
+                        <td>數量</td>
+                        <td>刪除</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="cursor: pointer;"><img src="images/shirt/f1.jpg"></td>
+                        <td style="cursor: pointer;">夏日涼感襯衫-拼接</td>
+                        <td>500</td>
+                        <td><input type="number" value="1"></td>
+                        <td><i class="fa-solid fa-trash-can"></i></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td style="cursor: pointer;"><img src="images/shirt/f1.jpg"></td>
+                        <td style="cursor: pointer;">夏日涼感襯衫-拼接</td>
+                        <td>500</td>
+                        <td><input type="number" value="1"></td>
+                        <td><i class="fa-solid fa-trash-can"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
 
-                    <div class="fee-group">
-                        <p>附加碼:</p>
-                        <p>500</p>
-                    </div>
+        <section class="order" id="order">
+            <div class="form">
+                <div class="form-left">
+                    <h3>選擇送貨與付款</h3>
 
-                    <div class="coupon-group">
-                        <p class="code">優惠代碼:</p>
-                        <div class="hide">
-                            <div class="row">
-                                <input type="text">
-                                <button>套用</button>
+                    <div class="delivery">
+                        <div class="form-group">
+                            <label for="#">送貨地點</label>
+                            <div>
+                                <select name="#" id="#">
+                                    <option value="#">台灣</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="coupon-group">
-                        <p class="code">推薦代碼:</p>
-                        <div class="hide">
-                            <div class="row">
-                                 <input type="text">
-                                <button>套用</button>
+                    
+                        <div class="form-group">
+                            <label for="#">送貨方式</label>
+                            <div>
+                                <select name="#" id="#">
+                                    <option value="#">7-11 取貨(信用卡,LINEPay)</option>
+                                    <option value="#">7-11 取貨(貨到付款)</option>
+                                    <option value="#">黑貓宅配(信用卡,LINEPay)</option>
+                                    <option value="#">黑貓宅配(信用卡,LINEPay)</option>
+                                    <option value="#">黑貓宅配(特別地區)</option>
+                                </select>
                             </div>
                         </div>
-                        
+                    
+                        <div class="form-group">
+                            <label for="#">付款方式</label>
+                            <div>
+                            <select name="#" id="#">
+                                    <option value="#">LINEPay</option>
+                                    <option value="#">信用卡(Visa,Master,JCB)</option>
+                                </select> 
+                            </div>
+                        </div>    
                     </div>
-                    <div class="fee-group final">
-                        <p>合計:</p>
-                        <p>500</p>
-                    </div>
+                </div>
 
-                    <button class="cost">前往結帳</button>
+                <div class="form-right">
+                    <h3>訂單資訊</h3>
+
+                    <div class="total">
+                        <div class="fee-group">
+                            <p>小計:</p>
+                            <p>500</p>
+                        </div>
+
+                        <div class="fee-group">
+                            <p>運費:</p>
+                            <p>60</p>
+                        </div>
+
+                        <div class="fee-group">
+                            <p>附加碼:</p>
+                            <p>500</p>
+                        </div>
+
+                        <div class="coupon-group">
+                            <p class="code">優惠代碼:</p>
+                            <div class="hide">
+                                <div class="row">
+                                    <input type="text">
+                                    <button>套用</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-group">
+                            <p class="code">推薦代碼:</p>
+                            <div class="hide">
+                                <div class="row">
+                                    <input type="text">
+                                    <button>套用</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="fee-group final">
+                            <p>合計:</p>
+                            <p>500</p>
+                        </div>
+
+                        <button class="cost">前往結帳</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="footer" id="footer">
-        <h1>TShop</h1>
-        
-        
-        <div class="row">
-            <dl>
-                <dt>資訊中心</dt>
-                <dd><a href="#">尺寸表</a></dd>
-                <dd><a href="#">常見問題</a></dd>
-                <dd><a href="#">近期活動</a></dd>
-            </dl>
-            <dl>
-                <dt>條款與政策</dt>
-                <dd><a href="#">購物須知 </a></dd>
-                <dd><a href="#">退換貨政策</a></dd>
-                <dd><a href="#">隱私條款</a></dd>
-                <dd><a href="#">購物金使用規範</a></dd>
-                <dd><a href="#">預購相關規章</a></dd>
-            </dl>
-            <dl>
-                <dt>會員</dt>
-                <dd><a href="#">申請會員</a></dd>
-                <dd><a href="#">登入</a></dd>
-            </dl>
-            <dl>
-                <dt>服務資訊</dt>
-                <dd><a href="#">香港</a></dd>
-                <dd><a href="#">新加坡</a></dd>
-                <dd><a href="#">馬來西亞</a></dd>
-                <dd><a href="#">其他國家</a></dd>
-            </dl>
-            <dl>
-                <dt>聯絡我們</dt>
-                <dd><a href="#">營業時間: 9:00~18:00</a></dd>
-                <dd><a href="#">LINE@客戶服務</a></dd>
-                <dd><a href="#">會員登入</a></dd>
-                <dd>
-                    <div class="contact">
-                        <a href="#"><i class="fa-brands fa-line"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </dd>
-            </dl>
+        <section class="footer" id="footer">
+            <h1>TShop</h1>
+            
+            
+            <div class="row">
+                <dl>
+                    <dt>資訊中心</dt>
+                    <dd><a href="#">尺寸表</a></dd>
+                    <dd><a href="#">常見問題</a></dd>
+                    <dd><a href="#">近期活動</a></dd>
+                </dl>
+                <dl>
+                    <dt>條款與政策</dt>
+                    <dd><a href="#">購物須知 </a></dd>
+                    <dd><a href="#">退換貨政策</a></dd>
+                    <dd><a href="#">隱私條款</a></dd>
+                    <dd><a href="#">購物金使用規範</a></dd>
+                    <dd><a href="#">預購相關規章</a></dd>
+                </dl>
+                <dl>
+                    <dt>會員</dt>
+                    <dd><a href="#">申請會員</a></dd>
+                    <dd><a href="#">登入</a></dd>
+                </dl>
+                <dl>
+                    <dt>服務資訊</dt>
+                    <dd><a href="#">香港</a></dd>
+                    <dd><a href="#">新加坡</a></dd>
+                    <dd><a href="#">馬來西亞</a></dd>
+                    <dd><a href="#">其他國家</a></dd>
+                </dl>
+                <dl>
+                    <dt>聯絡我們</dt>
+                    <dd><a href="#">營業時間: 9:00~18:00</a></dd>
+                    <dd><a href="#">LINE@客戶服務</a></dd>
+                    <dd><a href="#">會員登入</a></dd>
+                    <dd>
+                        <div class="contact">
+                            <a href="#"><i class="fa-brands fa-line"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="pay">
+                <img src="images/pay.png">
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>© 2022 Yang-Cheng web-practice</p>
         </div>
 
-        <div class="pay">
-            <img src="images/pay.png">
+        <div class="arrow-btn">
+            <div class="circle" id="topBtn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
         </div>
-    </section>
-
-    <div class="copyright">
-        <p>© 2022 Yang-Cheng web-practice</p>
     </div>
 
-    <div class="arrow-btn">
-        <div class="circle" id="topBtn">
-            <i class="fa-solid fa-arrow-up"></i>
-        </div>
-    </div>
-
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="https://kit.fontawesome.com/5ed6520c8d.js" crossorigin="anonymous"></script>
+    <script src="vue.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -7,566 +7,211 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <section class="nav" id="nav">
-        <div class="logo">
-           <h1>TShop</h1> 
+    <div id="app">
+        <section class="nav" id="nav">
+            <div class="logo">
+            <h1>TShop</h1> 
+            </div>
+
+            <ul id="navbar">
+                <li><a href="#hero">首頁</a></li>
+                <li><a href="#clothes">服飾</a></li>
+                <li><a href="#shoes">鞋款</a></li>
+                <li><a href="#accessories">配件</a></li>
+                <li><a href="#footer">資訊中心</a></li>
+                <li><a href="cart.html">結帳</a></li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </section>
+
+        <div class="hero" id="hero">
+        <div class="text">
+            <h3>全館商品</h3>
+            <h2>超值優惠，折扣不斷</h2>
+            <p>使用優惠券節省更多最高高達<span> 5折</span></p>
+            <button>立即選購<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+            
         </div>
 
-        <ul id="navbar">
-            <li><a href="#hero">首頁</a></li>
-            <li><a href="#clothes">服飾</a></li>
-            <li><a href="#shoes">鞋款</a></li>
-            <li><a href="#accessories">配件</a></li>
-            <li><a href="#footer">資訊中心</a></li>
-            <li><a href="cart.html">結帳</a></li>
-        </ul>
+        <section class="clothes" id="clothes">
+            <h2>夏日精選服飾</h2>
+            <span class="line"></span>
 
-        <i class="fa-solid fa-bars" id="menu"></i>
-    </section>
-
-    <div class="hero" id="hero">
-       <div class="text">
-           <h3>全館商品</h3>
-           <h2>超值優惠，折扣不斷</h2>
-           <p>使用優惠券節省更多最高高達<span> 5折</span></p>
-           <button>立即選購<i class="fa-solid fa-arrow-right"></i></button>
-       </div>
-        
-    </div>
-
-    <section class="clothes" id="clothes">
-        <h2>夏日精選服飾</h2>
-        <span class="line"></span>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="images/shirt/f1.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-拼接</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="card-container">
+                <div class="card" v-for='item in clothesData'>
+                    <img :src="item.image">
+                    <div class="detail">
+                        <span>夏日系列</span>
+                        <h5>{{ item.name }}</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>${{ item.cost }}</h3>
                     </div>
-                    <h3>$500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/n8.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>深色涼感襯衫</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$650</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/f2.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-花語1</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/f3.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-花語2</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/f4.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-花語3</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/f5.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-花語4</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/n6.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>舒適短褲</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$450</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shirt/n4.jpg">
-                <div class="detail">
-                    <span>夏日系列</span>
-                    <h5>夏日涼感襯衫-地圖</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$650</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-        </div>
-        
-    </section>
-
-    <div class="banner">
-        <h2>穿在腳下，行在未來</h2>
-        <h4>擁有時尚人生，踩出快樂，走出精彩</h4>
-    </div>
-
-    <section class="shoes" id="shoes">
-        <h2>熱門鞋款</h2>
-        <span class="line"></span>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="images/shoes/pexels-melvin-buezo-2529148.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 1</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$4500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-6050919.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 2</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$2850</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-6050924.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 3</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$4500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-5710074.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 4</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$5500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-deybson-mallony-5413291.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 5</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$5600</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-6540926.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 6</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$3500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-6540973.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 7</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$4250</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/shoes/pexels-ox-street-6540914.jpg">
-                <div class="detail">
-                    <span>鞋款</span>
-                    <h5>NIKE Air 8</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$6500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <div class="banner acc-banner">
-        <h2>牽動世界的風潮</h2>
-        <h4>提不住的優雅，美不住的綻放</h4>
-    </div>
-
-    <section class="accessories" id="accessories">
-        <h2>流行配件飾品</h2>
-        <span class="line"></span>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="images/accessories/pexels-alexey-demidov-10803602.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>黑耀手環</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$550</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-castorly-stock-3641056.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>絢麗髮箍</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$680</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-dmitry-zvolskiy-1676126.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>花樣扁梳</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$450</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-ge-yonk-1152077.jpg">
-                <div class="detail">
-                    <span>配件配件</span>
-                    <h5>多功能斜背包</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$1250</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-felipe-ferreira-701877.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>有色眼鏡</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$980</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-romina-bm-5380900.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>紅色耳飾</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$2500</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-superlens-photography-11655346.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>深秋耳飾</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$1280</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="card">
-                <img src="images/accessories/pexels-the-glorious-studio-5370648.jpg">
-                <div class="detail">
-                    <span>配件</span>
-                    <h5>星型手環</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>$880</h3>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="sm-banner" id="sm-banner">
-        <div class="banner-left">
-            <div class="banner-box">
-                <div class="text">
-                    <span>季節促銷</span>
-                    <h2>夏日來臨</h2>
-                    <p>經典服飾目前特價就在TShop</p>
-                    <button>查看更多</button>
+                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
                 </div>
             </div>
-            <div class="banner-box banner-box2">
-                <div class="text">
-                    <span>季節促銷</span>
-                    <h2>買一送一</h2>
-                    <p>經典配件目前特價就在TShop</p>
-                    <button>立即查看</button>
-                </div>
-            </div>
-        </div>
-        <div class="banner-right">
-            <div class="banner-bottom">
-                <div class="banner-box banner-box4">
-                    <h2>全新商品，多樣選擇</h2>
-                    <span>春季 / 夏季 2022</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+        </section>
 
-    <section class="footer" id="footer">
-        <h1>TShop</h1>
-        
-        
-        <div class="row">
-            <dl>
-                <dt>資訊中心</dt>
-                <dd><a href="#">尺寸表</a></dd>
-                <dd><a href="#">常見問題</a></dd>
-                <dd><a href="#">近期活動</a></dd>
-            </dl>
-            <dl>
-                <dt>條款與政策</dt>
-                <dd><a href="#">購物須知 </a></dd>
-                <dd><a href="#">退換貨政策</a></dd>
-                <dd><a href="#">隱私條款</a></dd>
-                <dd><a href="#">購物金使用規範</a></dd>
-                <dd><a href="#">預購相關規章</a></dd>
-            </dl>
-            <dl>
-                <dt>會員</dt>
-                <dd><a href="#">申請會員</a></dd>
-                <dd><a href="#">登入</a></dd>
-            </dl>
-            <dl>
-                <dt>服務資訊</dt>
-                <dd><a href="#">香港</a></dd>
-                <dd><a href="#">新加坡</a></dd>
-                <dd><a href="#">馬來西亞</a></dd>
-                <dd><a href="#">其他國家</a></dd>
-            </dl>
-            <dl>
-                <dt>聯絡我們</dt>
-                <dd><a href="#">營業時間: 9:00~18:00</a></dd>
-                <dd><a href="#">LINE@客戶服務</a></dd>
-                <dd><a href="#">會員登入</a></dd>
-                <dd>
-                    <div class="contact">
-                        <a href="#"><i class="fa-brands fa-line"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </dd>
-            </dl>
+        <div class="banner">
+            <h2>穿在腳下，行在未來</h2>
+            <h4>擁有時尚人生，踩出快樂，走出精彩</h4>
         </div>
 
-        <div class="pay">
-            <img src="images/pay.png">
+        <section class="shoes" id="shoes">
+            <h2>熱門鞋款</h2>
+            <span class="line"></span>
+
+            <div class="card-container">
+                <div class="card" v-for="item in shoesData">
+                    <img :src="item.image">
+                    <div class="detail">
+                        <span>鞋款</span>
+                        <h5>{{ item.name }}</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>${{ item.cost }}</h3>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner acc-banner">
+            <h2>牽動世界的風潮</h2>
+            <h4>提不住的優雅，美不住的綻放</h4>
         </div>
-    </section>
 
-    <div class="copyright">
-        <p>© 2022 Yang-Cheng web-practice</p>
-    </div>
+        <section class="accessories" id="accessories">
+            <h2>流行配件飾品</h2>
+            <span class="line"></span>
 
-    <div class="arrow-btn">
-        <div class="circle" id="topBtn">
-            <i class="fa-solid fa-arrow-up"></i>
+            <div class="card-container">
+                <div class="card" v-for="item in acceData">
+                    <img :src="item.image">
+                    <div class="detail">
+                        <span>配件</span>
+                        <h5>{{ item.name }}</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>${{ item.cost }}</h3>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sm-banner" id="sm-banner">
+            <div class="banner-left">
+                <div class="banner-box">
+                    <div class="text">
+                        <span>季節促銷</span>
+                        <h2>夏日來臨</h2>
+                        <p>經典服飾目前特價就在TShop</p>
+                        <button>查看更多</button>
+                    </div>
+                </div>
+                <div class="banner-box banner-box2">
+                    <div class="text">
+                        <span>季節促銷</span>
+                        <h2>買一送一</h2>
+                        <p>經典配件目前特價就在TShop</p>
+                        <button>立即查看</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="banner-bottom">
+                    <div class="banner-box banner-box4">
+                        <h2>全新商品，多樣選擇</h2>
+                        <span>春季 / 夏季 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="footer">
+            <h1>TShop</h1>
+            
+            
+            <div class="row">
+                <dl>
+                    <dt>資訊中心</dt>
+                    <dd><a href="#">尺寸表</a></dd>
+                    <dd><a href="#">常見問題</a></dd>
+                    <dd><a href="#">近期活動</a></dd>
+                </dl>
+                <dl>
+                    <dt>條款與政策</dt>
+                    <dd><a href="#">購物須知 </a></dd>
+                    <dd><a href="#">退換貨政策</a></dd>
+                    <dd><a href="#">隱私條款</a></dd>
+                    <dd><a href="#">購物金使用規範</a></dd>
+                    <dd><a href="#">預購相關規章</a></dd>
+                </dl>
+                <dl>
+                    <dt>會員</dt>
+                    <dd><a href="#">申請會員</a></dd>
+                    <dd><a href="#">登入</a></dd>
+                </dl>
+                <dl>
+                    <dt>服務資訊</dt>
+                    <dd><a href="#">香港</a></dd>
+                    <dd><a href="#">新加坡</a></dd>
+                    <dd><a href="#">馬來西亞</a></dd>
+                    <dd><a href="#">其他國家</a></dd>
+                </dl>
+                <dl>
+                    <dt>聯絡我們</dt>
+                    <dd><a href="#">營業時間: 9:00~18:00</a></dd>
+                    <dd><a href="#">LINE@客戶服務</a></dd>
+                    <dd><a href="#">會員登入</a></dd>
+                    <dd>
+                        <div class="contact">
+                            <a href="#"><i class="fa-brands fa-line"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="pay">
+                <img src="images/pay.png">
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>© 2022 Yang-Cheng web-practice</p>
+        </div>
+
+        <div class="arrow-btn">
+            <div class="circle" id="topBtn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="https://kit.fontawesome.com/5ed6520c8d.js" crossorigin="anonymous"></script>
+    <script src="vue.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
