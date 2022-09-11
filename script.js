@@ -24,8 +24,15 @@ topBtn.onclick = function(){
     document.documentElement.scrollTop = 0;
 }
 
+/* toggle */
+let code = document.getElementsByClassName('code');
+let hide = document.getElementsByClassName('hide');
 
-
+for (let i=0; i<code.length; i++){
+    code[i].onclick = function(){
+        hide[i].classList.toggle('active');
+    }
+}
 
 
 
