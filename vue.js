@@ -1,6 +1,7 @@
 Vue.createApp({
     data() {
         return {
+            /* merchandies */
             clothesData: [
                 {
                     name: '夏日涼感襯衫-拼接',
@@ -127,10 +128,13 @@ Vue.createApp({
                     cost: 880,
                 },
             ],
-            
+            /* data */
+            list: [],
+            quantity: 0,
         }
     },
     methods: {
+      
 
     },
     mounted() {

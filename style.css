@@ -164,14 +164,15 @@ a{
     margin-bottom: 2rem;
     color:#005AB5;
 }
-.card-container .card a i{
+.card-container .card .cart{
     font-size: 2.5rem;
     color: #6c6c6c;
     position: absolute;
     right: 2rem;
     bottom: 2rem;
+    cursor: pointer;
 }
-.card-container .card a i:hover{
+.card-container .card .cart:hover{
     color: #005AB5;
 }
 
@@ -220,7 +221,7 @@ a{
     margin-bottom: 2rem;
     color:#BB3D00;
 }
-.shoes .card-container .card a i:hover{
+.shoes .card-container .card .cart:hover{
     color:#BB3D00;
 }
 
@@ -244,7 +245,7 @@ a{
 .accessories .card-container .card .detail h3{
     color:#4F9D9D;
 }
-.accessories .card-container .card a i:hover{
+.accessories .card-container .card .cart:hover{
     color:#4F9D9D;
 }
 
@@ -575,7 +576,7 @@ a{
     .card-container .card .detail h3{
         font-size: 1.5rem;
     }
-    .card-container .card a i{
+    .card-container .card .cart{
         font-size: 2rem;
     }
     .banner-left{
