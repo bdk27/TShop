@@ -1,44 +1,52 @@
 Vue.createApp({
     data() {
         return {
-            /* merchandies */
+            checkgroup: [],
             clothesData: [
                 {
+                    id: 1,
                     name: '夏日涼感襯衫-拼接',
                     image: 'images/shirt/f1.jpg',
                     cost: 500,
                 },
                 {
+                    id: 2,
                     name: '深色涼感襯衫',
                     image: 'images/shirt/n8.jpg',
                     cost: 650,
                 },
                 {
+                    id: 3,
                     name: '夏日涼感襯衫-花語1',
                     image: 'images/shirt/f2.jpg',
                     cost: 500,
                 },
                 {
+                    id: 4,
                     name: '夏日涼感襯衫-花語2',
                     image: 'images/shirt/f3.jpg',
                     cost: 500,
                 },
                 {
+                    id: 5,
                     name: '夏日涼感襯衫-花語3',
                     image: 'images/shirt/f4.jpg',
                     cost: 500,
                 },
                 {
+                    id: 6,
                     name: '夏日涼感襯衫-花語4',
                     image: 'images/shirt/f5.jpg',
                     cost: 500,
                 },
                 {
+                    id: 7,
                     name: '舒適短褲',
                     image: 'images/shirt/n6.jpg',
                     cost: 450,
                 },
                 {
+                    id: 8,
                     name: '夏日涼感襯衫-地圖',
                     image: 'images/shirt/n4.jpg',
                     cost: 650,
@@ -128,13 +136,18 @@ Vue.createApp({
                     cost: 880,
                 },
             ],
-            /* data */
-            list: [],
+            
             quantity: 0,
         }
     },
     methods: {
-      
+      getSum() {
+          let sum = 0;
+          for (let i=0; i<this.checkgroup.length; i++){
+              sum += this.checkgroup[i].cost;
+          }
+          return sum;
+      },
 
     },
     mounted() {

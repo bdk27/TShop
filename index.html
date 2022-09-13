@@ -54,10 +54,11 @@
                         </div>
                         <h3>${{ item.cost }}</h3>
                     </div>
-                    <i class="fa fa-shopping-cart cart"></i>
+                    <input type="checkbox" v-model="checkgroup" :value="item" :id="item.id" style="display: none;">
+                    <label :for="item.id"><i class="fa fa-shopping-cart cart" ></i></label>
+                   
                 </div>
             </div>
-            
         </section>
 
         <div class="banner">
