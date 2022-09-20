@@ -40,7 +40,7 @@
             <span class="line"></span>
 
             <div class="card-container">
-                <div class="card" v-for='item in clothesData'>
+                <div class="card" v-for='item in clothesData' :key="item.id">
                     <img :src="item.image">
                     <div class="detail">
                         <span>夏日系列</span>
