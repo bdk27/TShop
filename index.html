@@ -71,7 +71,7 @@
             <span class="line"></span>
 
             <div class="card-container">
-                <div class="card" v-for="item in shoesData">
+                <div class="card" v-for="item in shoesData" :key="item.id">
                     <img :src="item.image">
                     <div class="detail">
                         <span>鞋款</span>
@@ -100,7 +100,7 @@
             <span class="line"></span>
 
             <div class="card-container">
-                <div class="card" v-for="item in acceData">
+                <div class="card" v-for="item in acceData" :key="item.id">
                     <img :src="item.image">
                     <div class="detail">
                         <span>配件</span>

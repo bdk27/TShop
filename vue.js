@@ -54,41 +54,49 @@ Vue.createApp({
             ],
             shoesData: [
                 {
+                    id: 1,
                     name: 'NIKE Air 1',
                     image: 'images/shoes/pexels-melvin-buezo-2529148.jpg',
                     cost: 4500,
                 },
                 {
+                    id: 2,
                     name: 'NIKE Air 2',
                     image: 'images/shoes/pexels-ox-street-6050919.jpg',
                     cost: 2850,
                 },
                 {
+                    id: 3,
                     name: 'NIKE Air 3',
                     image: 'images/shoes/pexels-ox-street-6050924.jpg',
                     cost: 4000,
                 },
                 {
+                    id: 4,
                     name: 'NIKE Air 4',
                     image: 'images/shoes/pexels-ox-street-5710074.jpg',
                     cost: 5500,
                 },
                 {
+                    id: 5,
                     name: 'NIKE Air 5',
                     image: 'images/shoes/pexels-deybson-mallony-5413291.jpg',
                     cost: 5600,
                 },
                 {
+                    id: 6,
                     name: 'NIKE Air 6',
                     image: 'images/shoes/pexels-ox-street-6540926.jpg',
                     cost: 3500,
                 },
                 {
+                    id: 7,
                     name: 'NIKE Air 7',
                     image: 'images/shoes/pexels-ox-street-6540973.jpg',
                     cost: 4250,
                 },
                 {
+                    id: 8,
                     name: 'NIKE Air 8',
                     image: 'images/shoes/pexels-ox-street-6540914.jpg',
                     cost: 6500,
@@ -96,41 +104,49 @@ Vue.createApp({
             ],
             acceData: [
                 {
+                    id: 1,
                     name: '黑耀手環',
                     image: 'images/accessories/pexels-alexey-demidov-10803602.jpg',
                     cost: 550,
                 },
                 {
+                    id: 2,
                     name: '絢麗髮箍',
                     image: 'images/accessories/pexels-castorly-stock-3641056.jpg',
                     cost: 680,
                 },
                 {
+                    id: 3,
                     name: '花樣扁梳',
                     image: 'images/accessories/pexels-dmitry-zvolskiy-1676126.jpg',
                     cost: 450,
                 },
                 {
+                    id: 4,
                     name: '多功能斜背包',
                     image: 'images/accessories/pexels-ge-yonk-1152077.jpg',
                     cost: 1250,
                 },
                 {
+                    id: 5,
                     name: '有色眼鏡',
                     image: 'images/accessories/pexels-felipe-ferreira-701877.jpg',
                     cost: 980,
                 },
                 {
+                    id: 6,
                     name: '紅色耳飾',
                     image: 'images/accessories/pexels-romina-bm-5380900.jpg',
                     cost: 2500,
                 },
                 {
+                    id: 7,
                     name: '深秋耳飾',
                     image: 'images/accessories/pexels-superlens-photography-11655346.jpg',
                     cost: 1280,
                 },
                 {
+                    id: 8,
                     name: '星型手環',
                     image: 'images/accessories/pexels-the-glorious-studio-5370648.jpg',
                     cost: 880,
